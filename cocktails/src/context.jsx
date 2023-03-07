@@ -9,6 +9,48 @@ const AppProvider = ({ children }) => {
     const [searchTerm, setSearchTerm] = useState('a');
     const [cocktails, setCocktails] = useState([]);
 
+    const fetchDrinks = async () => {
+        setLoading(true);
+        try {
+            const response = await fetch(`${url}${searchTerm}`);
+            const data = await response.json();
+            console.log(data);
+            const { drink } = data;
+
+            if (drink) {
+                const newCocktails = drinks.map((item) => {
+                    const { idDrink,
+                        strDrink,
+                        strDrinkThumb,
+                        strAlcoholic,
+                        strGlass } = item;
+
+                    return {
+                        id: idDrink,
+                        name: strDrink,
+                        image: strDrinkThumb,
+                        info: strAlcoholic,
+                        glass: strGlass,
+                    }
+                });  // percorre todos os objetos e retorna com novas keys
+                setCocktails(newCocktails);
+
+            } else {
+                setCocktails([]);
+            }
+
+            setLoading(false);
+
+        } catch (error) {
+            console.log(error);
+            setLoading(false);
+        }
+    }
+
+    useEffect(() => {
+        fetchDrinks();
+    }, [searchTerm]); // Buscar dados toda vez que searchTerm sofrer uma mudança de estado
+
     return (
         <AppContext.Provider value={{
             loading,
