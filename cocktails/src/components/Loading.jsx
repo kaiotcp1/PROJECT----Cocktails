@@ -1,8 +1,10 @@
 import React from 'react'
-
+import Loader from '../assets/images/loader.svg'
 const Loading = () => {
   return (
-    <div>Loading</div>
+    <div className="loading">
+      <img src={Loader} alt="Loading animate" />
+    </div>
   )
 }
 
