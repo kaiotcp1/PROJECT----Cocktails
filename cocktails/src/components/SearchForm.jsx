@@ -1,21 +1,23 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useRef } from 'react';
 import { useGlobalContext } from '../context'
 
 const SearchForm = () => {
-
-  const handleSubmit = () => {
-
-  }
-
-  const searchValue = () => {
-
-  }
+  const { setSearchTerm } = useGlobalContext();
+  const searchValue = useRef()
+  
+  useEffect(() => {
+    searchValue.current.focus()
+  },[])
 
   const searchCocktail = () => {
-
+    setSearchTerm(searchValue.current.value)
   }
 
-  const { setSearchTerm } = useGlobalContext();
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  }
+
   return (
     <section className='search-center section search'>
       <form className='search-form' onSubmit={handleSubmit}>
