@@ -5,15 +5,15 @@ const About = () => {
     <section className="section about-section">
       <h1 className='section-title'> About us </h1>
       <p>
-        As bebidas e drinks são verdadeiras obras de arte para os sentidos, com cores vivas e sabores exuberantes que aguçam o paladar
-        e alegram os olhos. Desde o vermelho intenso de um vinho encorpado até o amarelo suave de uma cerveja gelada, as bebidas vêm em
-        uma ampla gama de tons e tons, cada um com sua própria personalidade única.
-        Os drinks são especialmente notáveis por suas apresentações impressionantes, com coquetéis que apresentam camadas vibrantes de cores,
-        frutas e flores delicadas como decoração. A cada gole, uma explosão de sabores deliciosos é revelada, misturando ingredientes frescos e
-        exóticos em uma sinfonia de gostos inesquecíveis.
-        Além disso, bebidas e drinks são uma forma de celebrar a vida e compartilhar momentos especiais com amigos e familiares.
-        Enquanto desfrutamos de um copo de vinho ou um coquetel exótico, estamos criando memórias e fortalecendo laços que durarão uma vida inteira.
-        Então, levante um copo para as bebidas e drinks, e celebre a exuberância e alegria que eles trazem para nossas vidas!
+      The drinks and drinks are true works of art for the senses, with bright colors and exuberant flavors that sharpen the palate.
+        and gladden the eyes. From the intense red of a full-bodied wine to the smooth yellow of an ice-cold beer, beverages come in
+        a wide range of tones and shades, each with its own unique personality.
+        Drinks are especially notable for their impressive presentations, with cocktails that feature vibrant celebrations of cores,
+        delicate fruits and flowers as decoration. With each goal, an explosion of delicious flavors is revealed, mixing fresh ingredients and
+        exotic flavors in a symphony of unforgettable tastes.
+        In addition, drinks and drinks are a way to celebrate life and share special moments with friends and family.
+        While enjoying a glass of wine or an exotic cocktail, we create memories and strengthen bonds that will last a lifetime.
+        So raise a glass to the drinks and drinks, and celebrate the exuberance and joy they bring to our lives!
       </p>
     </section>
   )
