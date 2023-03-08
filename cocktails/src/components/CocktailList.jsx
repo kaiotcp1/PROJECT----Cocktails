@@ -19,8 +19,15 @@ const CocktailList = () => {
   }
 
   return (
-    <div>CocktailList</div>
-  )
+      <section className="section">
+        <h2 className="section-title">cocktails</h2>
+        <div className="cocktails-center">
+        {cocktails.map((item) => {
+            return <Cocktail key={item.id} {...item} /> //Copia de item como props
+          })}
+        </div>
+      </section>
+    )
 }
 
 export default CocktailList
