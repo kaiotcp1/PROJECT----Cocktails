@@ -4,7 +4,7 @@
 
 # Sobre o projeto
 
-Essa aplicação consiste em consumiar API externa utilizando React
+Essa aplicação consiste em consumir uma API externa utilizando React
 [Acesse aqui](https://cocktailhp.netlify.app)
 
 
